@@ -1,0 +1,13 @@
+/* Basic custom styles and small animations */
+:root{--accent:#4f46e5}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+.hero{background-image:linear-gradient(160deg, rgba(79,70,229,0.06), rgba(99,102,241,0.02));}
+.hover-grow{transition:transform .28s ease, box-shadow .28s ease}
+.hover-grow:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 12px 30px rgba(16,24,40,0.12)}
+.card img{height:220px;object-fit:cover}
+.card .card-body{min-height:110px}
+img.img-fluid{animation:fadeIn .7s ease both}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* Responsive tweaks */
+@media(min-width:992px){.card img{height:200px}}
